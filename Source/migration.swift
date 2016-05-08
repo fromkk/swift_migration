@@ -134,7 +134,7 @@ public struct MigrationColumn
 
     public func toString() -> String
     {
-        var result :String = "\(name) \(columnType.toString(constraint))"
+        var result :String = "\(name) \(columnType.toString(constraint :constraint))"
         if unsigned
         {
             result += " UNSIGNED"
